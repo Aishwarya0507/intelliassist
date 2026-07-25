@@ -83,8 +83,8 @@ export default function App() {
   const [showPromptPreview, setShowPromptPreview] = useState(false)
 
   // Settings states (persisted in local storage)
-  const [provider, setProvider] = useState(() => localStorage.getItem('ia_provider') || 'openai')
-  const [model, setModel] = useState(() => localStorage.getItem('ia_model') || 'gpt-4o-mini')
+  const [provider, setProvider] = useState(() => localStorage.getItem('ia_provider') || 'gemini')
+  const [model, setModel] = useState(() => localStorage.getItem('ia_model') || 'gemini-1.5-flash')
   const [apiKey, setApiKey] = useState(() => localStorage.getItem('ia_api_key') || '')
   const [showApiKey, setShowApiKey] = useState(false)
 
